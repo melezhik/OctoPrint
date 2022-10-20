@@ -1,15 +1,16 @@
 tasks:
- -
+  -
    name: install-python
    plugin: plugin: sparkyci-package-python
- -
+  -
    name: install-deps
    language: Bash
-   code: pip install -e .[develop]
+   code: |
+      pip install -e .[develop]
    depends:
     -
       name: install-python
- - 
+  - 
    name: unit-tests
    default: true
    language: Bash
