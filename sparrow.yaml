@@ -1,7 +1,7 @@
 tasks:
   -
    name: install-python
-   plugin: plugin: sparkyci-package-python
+   plugin: sparkyci-package-python
   -
    name: install-deps
    language: Bash
