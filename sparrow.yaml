@@ -8,6 +8,7 @@ tasks:
    code: |
       set -e
       cd source
+      sudo apk add linux-headers
       pip install -e .[develop]
    depends:
     -
